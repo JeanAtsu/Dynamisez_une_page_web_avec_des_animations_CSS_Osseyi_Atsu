@@ -1,0 +1,891 @@
+
+*
+{
+    box-sizing:border-box;
+	font-family: Roboto, Arial, sans-serif;
+    font-size:medium;
+}
+
+/*
+*
+{
+    background-color: rgba(255, 0, 0, 0.02);
+}
+*/
+
+body
+{
+    max-width: 1400px;
+	box-sizing: content-box;
+	width: 100%;
+    margin: auto;
+    color: black;
+}
+
+h1
+{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 60%;
+}
+h2
+{
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+}
+h3 
+{
+    font-weight: bolder;
+    font-size: 26px;
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+h4
+{
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0px;
+    color: black;
+}
+
+h5
+{
+    font-weight: normal;
+    padding-top: 5px;
+    margin: 0px;
+    color: black;
+    
+}
+
+#titrePrincipal
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+#titrePrincipal h1
+{
+    width: 100%;
+}
+#titrePrincipal h2
+{
+    width: 100%;
+}
+
+.imageRecherche
+{
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.buttonIn input
+{
+    border-style: none;
+    align-content:flex-start;
+    text-align: center;
+    width: auto;
+}
+.buttonIn 
+{
+    width: 400px;
+    position: relative;
+    margin: 10px;
+    object-fit: fill;
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+}    
+input 
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 50px;   
+    font-size: 1.2em;  
+    font-weight: bold;
+    position: relative;
+    padding-left: 5px; 
+    background-color:  #f0f0f0f1;
+}
+
+/* grand block*/
+.grandBlock
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* en-tête*/
+#entete
+{	
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    vertical-align: top;
+    font-family: Shrikhand, Arial, sans-serif;
+}
+
+/* logo */
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    justify-items:center;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:20px;
+    font-family: Shrikhand, Arial, sans-serif;
+    width: 100%;
+}
+
+#logo img
+{
+    width: 40%;
+    height: 60px;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+#entete a 
+{
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: black;
+    height: 20px;
+    vertical-align: middle;
+    align-self: center;
+    justify-content: left;
+    justify-items: left;
+    margin: 0;
+    
+}
+
+
+#rechercher
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+}
+#rechercher input
+{
+    background-color:transparent;
+}
+.imageRecherche
+{
+    vertical-align: -webkit-baseline-middle;
+    font-size: 1em;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100px;
+}
+/* titre principal*/
+#titrePrincipal
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #f0f0f0f1;
+    padding: 0;
+    margin: 0;
+}
+#titrePrincipal h1
+{
+    margin-top: 20px;
+}
+
+#titrePrincipal ul li a
+{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(0deg,rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    height: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: white;
+}
+#titrePrincipal ul li a:hover
+{
+    background: #FF79DA ;
+}
+
+.explorer
+{
+    /*border-radius: 0px 30px 30px 0px;*/
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    border-radius: 60px 60px 60px 60px;
+    height: 60px;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+  
+}
+
+#fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    vertical-align: top;
+    flex-wrap: wrap;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin:10px;
+    background-color: white;
+}
+#fonctionnement ul
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+  
+}
+#fonctionnement li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border: solid 2px #f0f0f0;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(0deg,#F2F2F2 30%, white 70%);
+    height: 70px;
+    width: 400px;
+    margin: 10px;
+}
+#fonctionnement li:hover
+{ 
+    background: linear-gradient(0deg, #e3d3f7 10%, white 90%);
+}
+
+.pastilleViolette
+{
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+    padding-left: 1px;
+    display: flex;
+    background-color: #9356DC;
+    border-radius: 100px 100px 100px 100px;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.btnFonction
+{
+    /*border-radius: 0px 30px 30px 0px;*/
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    border: none 2px #f0f0f0;
+    height: 100%;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    padding-right: 10px;
+}
+.btnFonction i
+{
+    vertical-align: middle;
+    text-align: center;
+    font-size: large;
+    object-fit: fill;
+    margin-right: 10px;
+    font-size:x-large;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Restaurants */
+#restaurants
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    vertical-align: top;
+    flex-wrap: wrap;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin:10px;
+    background-color: #f0f0f0f1;
+}
+#restaurants h3
+{
+    margin:10px;
+}
+#restaurants ul
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+  
+}
+#restaurants li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border: solid 2px #f0f0f0;
+    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(0deg,#F2F2F2 30%, white 70%);
+    height: 70px;
+    width: 400px;
+    margin: 10px;
+}
+.restaurantLigne 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    margin: auto;
+    margin-left: 3px;
+    width: 100%; 
+    align-content: center;
+    align-items: center;
+    
+}
+
+.restaurantLigne a
+{
+    width: 50%;
+    margin: auto;  
+    margin-bottom: 10px;
+}
+
+
+.figureRestaurant
+{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+   
+    color:#0065FC;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin: 20px 10px;
+}
+.figureRestaurant figcaption
+{
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+figCaption  h4
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin:0;
+    padding-right: 20px;
+}
+strong
+{
+    color:black;
+}
+
+.heart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 180%;
+    color: black;
+    border-style: none;
+}
+
+.heart .fa-regular
+{
+    font-size: 1.5em;
+    vertical-align: top ;
+    margin-left: auto;
+    position:absolute; 
+    z-index:1;
+    transition: color 0ms;
+}
+.heart .fa-solid
+{
+    font-size: 1.5em;
+    vertical-align: top ;
+    margin-left: auto;
+    position:absolute; 
+    z-index:2;
+    color: white;
+    display: none;
+    transition: color 0ms;
+}
+
+.heart .fa-regular:hover, .heart .fa-solid:hover
+{
+    color: #FF79DA;
+}
+
+.imageRestaurant
+{
+  width: 100%;
+  height: 130px; 
+  font-size: small;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  object-fit: cover;
+}
+figcaption > * 
+{
+    margin-bottom: 5px;
+}
+.imageRestaurant a
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+    align-items:baseline;
+    width: 30px;
+    height: 10px;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+/* affichage global des liens de navigation*/
+a
+{
+    text-decoration: none;
+    font-size:medium;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+nav li
+{
+    margin: 10px;
+}
+
+nav a
+{
+    font-size: 1.2em;
+    color: #181818;
+    text-decoration: none;
+}
+
+/* Pied de page*/
+
+.piedDePage
+{
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.piedDePage ul
+{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0px;
+    color: black;
+}
+
+.piedDePage ul > li
+{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.piedDePage div
+{
+    margin-top: 10px;
+}
+
+.groupePied
+{
+    text-decoration-style: solid;
+    text-decoration: none;
+    text-align: left;
+    font-size: 130%;
+    color: white;
+    width: 100%;
+    font-family: Shrikhand, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.piedDePage
+{
+    background-color: black;
+
+}
+.piedDePage ul li > a, .groupePied, .iconePied
+{
+    color: white;
+}
+.iconePied
+{
+    display: flex;
+    flex-direction: row;
+}
+.fa-handshake-angle
+{
+    margin-right: 5px;
+}
+.fa-utensils
+{
+    margin-right: 10px;
+}
+
+/* Menu restau */
+
+.menuRestaurant
+{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    margin:10px;
+    padding: 0;
+}
+main, main .titreRestaurant
+{
+    margin:0;
+    padding: 0;
+    width: auto;
+}
+main img
+{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    max-height: 400px;
+}
+.titreRestaurant
+{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-content: space-around ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.titreRestaurant strong
+{
+    width: 100%;
+    align-self: center;
+    font-family: Shrikhand, Arial, sans-serif;
+    margin-left: 12px;
+    
+}
+.titreRestaurant .heart
+{
+    margin:0;
+    padding: 0;
+}
+
+#menuRestaurant .figureMenu figcaption
+{
+    background-color: #f2f2f298;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    object-fit: cover;
+
+}
+.menuRestaurant .containtMenu
+{
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.figureMenu figcaption
+{
+    height: 100px;
+    margin-top: 10px;
+    width: 100%;
+}
+.figureMenu figcaption div
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#menuRestaurant img 
+{
+    width: 100%; 
+}
+#menuRestaurant
+{
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+}
+.ligneMenu
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 30px 30px 0px;
+}
+.ligneMenu div
+{
+    width: 100%;
+    align-content: flex-end;
+}
+.ligneMenu div h5, .ligneMenu div h4
+{
+    width: 100%;
+}
+.ligneMenu div h5 strong
+{
+    margin-left: 20px;
+}
+.fa-euro-sign
+{
+    margin-left: 5px;
+}
+.check
+{
+    font-size: 2em;
+    justify-content: right;
+    justify-items: right;
+    align-items: center;
+    align-content: center;
+    border-radius: 0px 30px 30px 0px;
+    width: 5%;
+}
+.ligneMenu .check
+{
+    background-color: aquamarine;
+    color:  aquamarine;
+    width: auto;
+}
+.fa-circle-check
+{
+    width: 100%;
+    margin-left: auto;
+    color: aquamarine;
+    margin-right: 20px;
+}
+.titreDessert, .titrePlats, .titreEntree
+{
+    text-transform: uppercase;
+    border-bottom: solid;
+    border-color: aquamarine;
+    border-bottom-width: 1px;
+    width: 20px;
+   
+}
+/*Média Queries */
+
+/*tablettes*/
+@media all and (max-width: 992px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #titrePrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    #titrePrincipal h1
+    {
+        width: 100%;
+    }
+    #titrePrincipal h2
+    {
+        width: 100%;
+    }
+    
+    .piedDePage
+    {
+       width: 100%;
+    }
+    
+    .piedDePage > li
+    {
+        width: 100%;
+    }
+    .ActiviteLigne
+    {
+        width: 60%; 
+        height: 80%;
+        margin: auto;
+    }
+   
+    .titreHebergement
+    {
+        /*padding-left: 50px;*/
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .afficherPlus
+    {
+        /*padding-left: 40px;*/
+        padding-bottom: 25px;
+    }
+    #Activites h3
+    {
+        /*padding-left: 150px;*/
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .restaurantLigne > a , .restaurantLigne, .figureRestaurant,.imageRestaurant
+    {
+        width: 100%;
+    }
+
+    .restaurantLigne
+    {
+        width: 100%; 
+        align-content: center;
+        align-items: center;
+    }
+    .restaurantLigne a
+    {
+        width: 40%;
+        margin: auto;  
+        margin-bottom: 10px;
+    }
+}
+/* Mobile */
+@media all and (max-width:767px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #titrePrincipal h1
+    {
+        width: 40%;
+    }
+    #titrePrincipal h2
+    {
+        width: 70%;
+    }
+    
+    .piedDePage
+    {
+       width: 100%;
+    }
+    #titrePrincipal h1
+    {
+        align-content:center;
+        width: 90%;
+    }
+    #titrePrincipal
+    {
+        justify-content: center;
+        align-content:center;
+        
+    }
+    .titrePopulaire
+    {
+        width: 100%;   
+    }
+    .piedDePage > li
+    {
+        width: 100%;
+    }
+    .restaurantLigne
+    {
+        width: 100%; 
+        align-content: center;
+    }
+    .restaurantLigne a
+    {
+        width: 95%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    #restaurants
+    {
+        width: 100%; 
+        margin: 0;
+    }
+    .ligneMenu div h5, .ligneMenu div h4
+    {
+        width: 100%;
+    }
+    .ligneMenu
+    {
+        width: 95%;
+    }
+    
+}
+
