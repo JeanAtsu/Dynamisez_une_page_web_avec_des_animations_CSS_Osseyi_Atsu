@@ -176,7 +176,7 @@ input
     align-content:center;
     margin: 0;
     padding: 0;
-    background-color: silver;
+    background-color:silver;
 }
 #rechercher input
 {
@@ -228,7 +228,7 @@ input
     padding: 10px;
     margin: 10px;
     background: linear-gradient(0deg,rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-    height: 60px;
+    height: 30px;
     margin-bottom: 30px;
     margin-top: 20px;
     color: white;
@@ -245,7 +245,7 @@ input
     align-items: center;
     font-size: medium;
     border-radius: 60px 60px 60px 60px;
-    height: 60px;
+    height: 30px;
     font-weight: bold;
     width: 100%;
     justify-content: center;
@@ -298,6 +298,7 @@ input
 #fonctionnement li:hover
 { 
     background: linear-gradient(0deg, #e3d3f7 10%, white 90%);
+    color: #9356DC;
 }
 
 .pastilleViolette
@@ -343,6 +344,10 @@ input
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.btnFonction h4
+{
+    color: black;
 }
 
 /*Restaurants */
@@ -501,7 +506,7 @@ figCaption  h4
 .imageRestaurant
 {
   width: 100%;
-  height: 130px; 
+  height: 150px; 
   font-size: small;
   border-radius: 20px 20px 0 0;
   background-color: white;
@@ -635,11 +640,6 @@ nav a
     width: 100%;
     margin: auto;
 }
-.imageRestau
-{
-    height: 100%;
-    margin-bottom: 0;
-}
 
 .figureMenu
 {
@@ -671,14 +671,16 @@ main, main .titreRestaurant
     justify-items: center;
     align-items: center;
     margin-right: 10px;
-    margin-top : -10px;
+    margin-top : -20px;
     border-radius: 30px 30px 0px 0px;
+    opacity: 1;
 }
 .titreRestaurant h3
 {
     width: 100%;
     align-self: center;
     font-family: Shrikhand, Arial, sans-serif;
+    font-size: large;
     margin-left: 5px;
     margin-top: 50px;
     padding-top: 20px;
@@ -688,11 +690,6 @@ main, main .titreRestaurant
    margin-top: 40px;
    margin-left: 0;
    padding-left: 0;
-}
-.titreRestaurant h3
-{
-    width: 100%;
-    font-size:large;
 }
 
 #menuRestaurant .figureMenu figcaption
