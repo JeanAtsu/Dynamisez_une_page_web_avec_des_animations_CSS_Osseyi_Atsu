@@ -488,6 +488,7 @@ figCaption  h4
 {
     display: block;
     background: -webkit-linear-gradient(rgba(147,86,220,1), rgba(255,121,218,1));
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
@@ -497,6 +498,7 @@ figCaption  h4
 {
     display: block;
     background: -webkit-linear-gradient(rgba(147,86,220,1), rgba(255,121,218,1));
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
