@@ -691,19 +691,26 @@ nav a
     align-content: space-between;
     object-fit: fill;
     border-radius: 20px 20px 0px 0px;
-    margin-top: -30px;
+    margin-top: -20px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
+    -webkit-backface-visibility: visible; /* Safari */
+    backface-visibility: visible;
 }
 .enteteRestau
 {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .enteteRestau .imageRestau
 {
+    position: relative;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
     z-index: 1;
+    margin-bottom: -30px;
 }
 .titreRestaurant article
 {
