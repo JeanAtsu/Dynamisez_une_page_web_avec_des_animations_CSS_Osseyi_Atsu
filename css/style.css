@@ -679,18 +679,30 @@ nav a
     object-fit: fill;
     min-height: 300px;
     background-position: center;
-    opacity:1;
+   
 }
 .titreRestaurant
 {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
     align-self: center;
     align-content: space-between;
     object-fit: fill;
     border-radius: 20px 20px 0px 0px;
     margin-top: -30px;
+    z-index: 2;
+}
+.enteteRestau
+{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    opacity:1;
+}
+.enteteRestau .imageRestau
+{
+    z-index: 2;
 }
 .titreRestaurant article
 {
