@@ -265,12 +265,18 @@ input
     margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
+}
+#restaurants
+{
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 #restaurants h3
 {
     width: 80%;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -405,7 +411,7 @@ input
     width: 100%; 
     align-content: center;
     align-items: center;
-    
+    position: relative;
 }
 
 .restaurantLigne a
@@ -422,6 +428,7 @@ input
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     margin: 0;
+    position: relative;
 }
 .figureRestaurant figcaption
 {
@@ -525,7 +532,7 @@ figcaption .heart
 .imageRestaurant
 {
   width: 100%;
-  height: 150px; 
+  height: 160px; 
   font-size: small;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
@@ -543,7 +550,7 @@ figcaption > *
     border-radius: 10px 10px 0px 0px;
     align-items:baseline;
     width: 30px;
-    height: 10px;
+    height: 20px;
     flex-wrap: wrap;
     max-width: 400px;
 }
@@ -726,6 +733,21 @@ nav a
     margin-top: 50px;
     padding-top: 20px;
 }
+.nouveau
+{
+    display: flex;
+    background-color: aquamarine;
+    color: rgba(0, 100, 0, 0.596);
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    vertical-align:top;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
 
 #menuRestaurant .figureMenu figcaption, .titreRestaurant
 {
@@ -765,8 +787,7 @@ nav a
     margin-bottom: 40px;
     margin-left: 10px;
     justify-content: center;
-    justify-items: center;
-    
+    justify-items: center;  
     align-content: center;
 }
 
@@ -960,7 +981,6 @@ nav a
         padding: 0;
     }
     
-
     .restaurantLigne 
     {
         margin: 10px;
@@ -990,29 +1010,21 @@ nav a
     }
 
     .heart .fa-regular, .heart .fa-solid
-    {
-        
-        margin-left: 10%;
+    {      
+        margin-left: 20%;
     }
 
-    #fonctionnement > h3
+    #fonctionnement > h3,  #restaurants h3
     {
         width: 100%;
-        margin-left: 30px;
+        margin-left: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
-    #restaurants h3
-    {
-        width: 100%;
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-   
 
 }
+/*Desktop*/
+
 @media all and (min-width: 992px)
 {
     body
@@ -1032,21 +1044,19 @@ nav a
         width: 100%;
     }
    
-    #fonctionnement > h3
+    #fonctionnement > h3,   #restaurants h3
     {
         width: 100%;
-        margin-left: 30px;
+        margin-left: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .heart .fa-regular, .heart .fa-solid
+    {
+        
+        margin-left: 30%;
     }
 
-    #restaurants h3
-    {
-        width: 100%;
-        margin-left: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 }
 
 
