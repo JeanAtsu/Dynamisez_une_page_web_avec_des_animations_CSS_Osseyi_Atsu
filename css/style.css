@@ -1,4 +1,3 @@
-
 *
 {
     box-sizing:content-box;
@@ -6,12 +5,11 @@
     font-size:medium;
 }
 
-/*
+
 *
 {
     background-color: rgba(255, 0, 0, 0.02);
 }
-*/
 
 body
 {
@@ -107,7 +105,6 @@ input
     background-color:  #f0f0f0f1;
 }
 
-
 /* en-tête*/
 #entete
 {	
@@ -153,10 +150,8 @@ input
     align-self: center;
     justify-content: left;
     justify-items: left;
-    margin: 0;
-    
+    margin: 0; 
 }
-
 
 #rechercher
 {
@@ -241,7 +236,6 @@ input
     font-weight: bold;
     width: 100%;
     justify-content: center;
-  
 }
 
 #fonctionnement
@@ -261,7 +255,7 @@ input
 }
 #fonctionnement > h3
 {
-    width: 95%;
+    width: 96%;
     margin: 0;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -291,8 +285,7 @@ input
     align-items: center;
     align-content: center;
     justify-items: center;
-    justify-content: space-between;
-  
+    justify-content: space-between; 
 }
 #fonctionnement li
 {
@@ -385,8 +378,7 @@ input
     align-items: center;
     align-content: center;
     justify-items: center;
-    justify-content: space-between;
-  
+    justify-content: space-between; 
 }
 #restaurants li
 {
@@ -777,7 +769,6 @@ nav a
     width: 100%; 
 }
 
-
 .menuEntree, .menuPlats, .menuDesserts
 {
     display: flex;
@@ -966,7 +957,6 @@ nav a
     background: #FF79DA ;
 }
 
-
 /*Média Queries */
 
 /*tablettes*/
@@ -1016,7 +1006,7 @@ nav a
 
     #fonctionnement > h3,  #restaurants h3
     {
-        width: 100%;
+        width: 96%;
         margin-left: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1045,7 +1035,7 @@ nav a
    
     #fonctionnement > h3,   #restaurants h3
     {
-        width: 100%;
+        width: 96%;
         margin-left: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1055,7 +1045,6 @@ nav a
         
         margin-left: 30%;
     }
-
 }
 
 
