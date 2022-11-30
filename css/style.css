@@ -41,6 +41,7 @@ h3
     font-weight: bolder;
     font-size: 24px;
     color: black;
+    width: 100%;
 }
 h4
 {
@@ -130,7 +131,7 @@ input
     margin:20px;
     font-family: Shrikhand, Arial, sans-serif;
     width: 100%;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 #logo img
@@ -165,7 +166,7 @@ input
     align-content:center;
     margin: 0;
     padding: 0;
-    background-color:silver;
+    background-color:#c0c0c070;
 }
 #rechercher input
 {
@@ -267,11 +268,12 @@ input
 {
     margin-top: 40px;
     margin-bottom: 0;
+    width: 100%;
 }
 
 #restaurants h3
 {
-    width: 80%;
+    width: 90%;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -289,7 +291,7 @@ input
     justify-items: center;
     justify-content: space-between; 
 }
-#fonctionnement li
+#fonctionnement ul li
 {
     display: flex;
     flex-direction: row;
@@ -302,9 +304,9 @@ input
     width: 100%;
     margin: 10px;
 }
-#fonctionnement li:hover
+#fonctionnement ul li:hover
 { 
-    background: linear-gradient(0deg, #e3d3f7 10%, white 90%);
+    background: #e3d3f7; 
     color: #9356DC;
 }
 
@@ -400,8 +402,6 @@ input
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    object-fit: cover;
-    margin: auto;
     width: 100%; 
     align-content: center;
     align-items: center;
@@ -461,14 +461,14 @@ figcaption .heart
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: right;
-    justify-content: right;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
     align-content: space-around;
     width: 80%;
     color: black;
     border-style: none;
-    margin-top: 60px;
-    margin-right: 10px;
+    margin-right: 12%;
     margin-left: auto;
 }
 
@@ -526,7 +526,7 @@ figcaption .heart
 .imageRestaurant
 {
   width: 100%;
-  height: 160px; 
+  height: 173px; 
   font-size: small;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
@@ -688,14 +688,17 @@ nav a
     width: 90%;
     align-self: center;
     align-content: space-between;
-    object-fit: fill;
-    border-radius: 20px 20px 0px 0px;
-    margin-top: -20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    object-fit: cover;
+    border-radius: 30px 30px 0px 0px;
     position: relative;
     z-index: 2;
     opacity: 1;
     -webkit-backface-visibility: visible; /* Safari */
     backface-visibility: visible;
+    padding-top: 30px;
 }
 .enteteRestau
 {
@@ -703,6 +706,9 @@ nav a
     flex-direction: column;
     position: relative;
     object-fit: cover;
+    align-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2 transparent;
 }
 .enteteRestau .imageRestau
 {
@@ -713,19 +719,14 @@ nav a
     margin-bottom: -20px;
     object-fit: cover;
 }
-.titreRestaurant article
-{
-    width: 100%;
-}
-.titreRestaurant article h3
+
+.titreRestaurant > h3
 {
     width: 100%;
     align-self: center;
     font-family: Shrikhand, Arial, sans-serif;
-    font-size: large;
+    font-size: 20px;
     margin-left: 20px;
-    margin-top: 50px;
-    padding-top: 20px;
 }
 .nouveau
 {
@@ -745,17 +746,15 @@ nav a
 
 #menuRestaurant .figureMenu figcaption, .titreRestaurant
 {
-    background-color: #f2f2f298;
+    background-color: #f2f2f2;
     width: 100%;
     align-items: center;
     align-self: center;
     align-content: center;
-    object-fit: fill;
 }
 
 .figureMenu figcaption
 {
-    height: 100px;
     margin-top: 10px;
     width: 100%;
 }
@@ -797,65 +796,16 @@ nav a
     display: flex;
     width: 50px;
     margin-left: auto;
+    margin-right: auto;
     flex-wrap: nowrap;
     overflow: hidden;
 }
 
-.ligneMenu div h5 strong
-{
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-}
 .fa-euro-sign
 {
     margin-left: 10px;
-    font-size: 0.8em;
-}
-
-.ligneMenu .check
-{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 0px 20px 20px 0px;
-    background-color: #99E2D0;
-    width: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 3px;
-    margin-right: 0;
-    padding-right: 0;
-    position: relative;
-}
-.ligneMenu div
-{
-    width: 100%;
-    align-content: flex-end;
-    height: 50px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
-
-.ligneMenu:hover,.check
-{
-    opacity: 0;
-    transition: 0.8s;
-}
-.ligneMenu:hover
-{
-    opacity: 1;
-    transition: 0.8s;
-}
-.ligneMenu:hover, .check:hover
-{
-    opacity: 1;
-    transition: 0.8s;
+    margin-right: 10px;
+    font-size: 0.6em;
 }
 
 .fa-circle-check
@@ -865,12 +815,14 @@ nav a
     margin-left: 10px;
 
 }
-.titreDessert, .titrePlat, .titreEntree
+.typeMenu
 {
     text-transform: uppercase;
     border-bottom: solid;
     border-color: #99E2D0;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 2px;
     width: 30px;
     margin-top: 10px;
     margin-bottom: 2px;
@@ -882,13 +834,68 @@ nav a
     display: flex;
     flex-direction: row;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 20px 20px 20px 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
     width: 96%;
     background-color: white;
+    word-wrap: break-word;
+    cursor: pointer;
 }
+
+.ligneMenu .check
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #99E2D0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 0px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.ligneMenu:hover .check
+{  
+    width: 50px;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.ligneMenu .check i
+{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    color:  #99E2D0;  
+    background-color: #fff;
+    width: auto;
+    border-radius: 100px 100px 100px 100px;
+    font-size: 1.36em;
+}
+.ligneMenu div
+{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    word-wrap: break-word;
+}
+
 #entete a .fa-arrow-left
 {
     margin-left: 10px;
@@ -972,7 +979,6 @@ nav a
     
     .restaurantLigne 
     {
-        margin: 10px;
         width: auto; 
         
     }
