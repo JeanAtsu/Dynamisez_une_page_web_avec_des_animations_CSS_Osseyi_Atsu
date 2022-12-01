@@ -1108,7 +1108,11 @@ nav a
     }
     .restaurantLigne a
     {
-        width: 40%;
+        width: 22%;
+    }
+    #restaurants
+    {
+        align-content: center;
     }
     #restaurants div
     {
@@ -1117,14 +1121,13 @@ nav a
    
     #fonctionnement > h3,   #restaurants h3
     {
-        width: 96%;
+        width: 100%;
         margin-left: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     .heart .fa-regular, .heart .fa-solid
-    {
-        
+    {    
         margin-left: 30%;
     }
 }
