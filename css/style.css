@@ -784,6 +784,7 @@ nav a
     align-content: center;
 }
 
+/*
 .menuEntree
 {
     animation: menu 2s;
@@ -796,14 +797,66 @@ nav a
 {
     animation: menu 6s;
 }
+*/
+.menuEntree1
+{
+    animation: menu 0.5s;
+}
+.menuEntree2
+{
+    animation: menu 1s;
+}
+.menuEntree3
+{
+    animation: menu 1.5s;
+}
+.menuEntree4
+{
+    animation: menu 2s;
+}
+
+.menuPlats1
+{
+    animation: menu 2.5s;
+}
+.menuPlats2
+{
+    animation: menu 3s;
+}
+.menuPlats3
+{
+    animation: menu 3.5s;
+}
+.menuPlats4
+{
+    animation: menu 4s;
+}
+.menuDesserts1
+{
+    animation: menu 4.5s;
+}
+.menuDesserts2
+{
+    animation: menu 5s;
+}
+.menuDesserts3
+{
+    animation: menu 5.5s;
+}
+.menuDesserts4
+{
+    animation: menu 6s;
+}
 
 @keyframes menu 
 {
     from {
         transform: scale(0);
+        opacity: 0;
     }
     to {
         transform: scale(1);
+        opacity: 1;
     }
 }
 
