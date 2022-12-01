@@ -85,7 +85,7 @@ h5
     width: 400px;
     position: relative;
     margin: 10px;
-    object-fit: fill;
+    object-fit: cover;
     display: flex;
     margin-left: 0px;
     padding-left: 0px;
@@ -344,7 +344,7 @@ input
     vertical-align: middle;
     text-align: center;
     font-size: large;
-    object-fit: fill;
+    object-fit: cover;
     margin-right: 10px;
     font-size:x-large;
     align-self: center;
@@ -530,7 +530,7 @@ figcaption .heart
   font-size: small;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
-  object-fit: fill;
+  object-fit: cover;
 }
 figcaption > * 
 {
@@ -696,7 +696,7 @@ nav a
     position: relative;
     z-index: 2;
     opacity: 1;
-    -webkit-backface-visibility: visible; /* Safari */
+    -webkit-backface-visibility: visible; 
     backface-visibility: visible;
     padding-top: 30px;
 }
@@ -708,12 +708,12 @@ nav a
     object-fit: cover;
     align-content: space-between;
     align-items: center;
-    background-color: #F2F2F2 transparent;
+    background-color: #F2F2F2;
 }
 .enteteRestau .imageRestau
 {
     position: relative;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
     z-index: 1;
     margin-bottom: -20px;
@@ -768,6 +768,7 @@ nav a
 #menuRestaurant img 
 {
     width: 100%; 
+    object-fit: cover;
 }
 
 .menuEntree, .menuPlats, .menuDesserts
@@ -781,6 +782,29 @@ nav a
     justify-content: center;
     justify-items: center;  
     align-content: center;
+}
+
+.menuEntree
+{
+    animation: menu 2s;
+}
+.menuPlats
+{
+    animation: menu 4s;
+}
+.menuDesserts
+{
+    animation: menu 6s;
+}
+
+@keyframes menu 
+{
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .ligneMenu div h5, .ligneMenu div h4
@@ -839,6 +863,7 @@ nav a
     margin-bottom: 10px;
     margin-left: 10px;
     width: 96%;
+    height: 70px;
     background-color: white;
     word-wrap: break-word;
     cursor: pointer;
@@ -859,16 +884,15 @@ nav a
     margin-right: 0;
     padding-right: 0;
     width: 0px;
-    transform: scale(0);
-    transition-property: transform;
-    transition-duration: 1s;
+    transform:scale(0,0);
 }
 
 .ligneMenu:hover .check
 {  
     width: 50px;
     cursor: pointer;
-    transform: scale(1);
+    transition-duration: 1s;
+    transform: scale(1) rotate(1turn);
 }
 
 .ligneMenu .check i
