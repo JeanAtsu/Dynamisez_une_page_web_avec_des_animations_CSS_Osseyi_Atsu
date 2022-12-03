@@ -57,7 +57,7 @@ h5
     font-weight: normal;
     padding-top: 5px;
     margin: 0px;
-    color: black; 
+    color: black;  
 }
 
 #titrePrincipal
@@ -860,12 +860,44 @@ nav a
     }
 }
 
+.spin 
+{
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    justify-items:center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    margin: auto;
+    font-family: Shrikhand, Arial, sans-serif;
+    width: 100%;
+    font-size: 40px;
+    animation: spin 1s ease-in-out 1s;
+    -webkit-animation: spin 1s ease-in-out 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    
+  }
+  @keyframes spin 
+  {
+    from 
+    {
+        transform: rotate(0);
+    }
+    to 
+    {
+        transform: rotate(720deg);
+    }
+  }
+  
+
 .ligneMenu div h5, .ligneMenu div h4
 {
     display: flex;
     width: 100%;
     margin-left: 5px;
-    word-wrap: break-word;
 }
 
 .ligneMenu > .prixMenu
@@ -920,6 +952,9 @@ nav a
     background-color: white;
     word-wrap: break-word;
     cursor: pointer;
+    text-overflow: ellipsis;  
+    white-space: initial;
+    overflow: hidden;  
 }
 
 .ligneMenu .check
@@ -981,7 +1016,7 @@ nav a
 .ligneMenu div h5, .ligneMenu div h4
 {
     align-content: center;
-    word-wrap: break-word;
+    
 }
 
 .ligneMenu > h5
@@ -996,6 +1031,9 @@ nav a
     padding-top: 10px;
     padding-bottom: 3px;
     width: 100%;
+    text-overflow: ellipsis;  
+    white-space: initial;
+    overflow: hidden;  
 }
 .prixMenu
 {
@@ -1105,6 +1143,13 @@ nav a
         width: 100%;
         margin: auto;
         padding: 0;
+    }
+    #menuRestaurant
+    {
+        align-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
     }
     .restaurantLigne a
     {
