@@ -877,8 +877,7 @@ nav a
     animation: spin 1s ease-in-out 1s;
     -webkit-animation: spin 1s ease-in-out 1s;
     animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    
+    -webkit-animation-duration: 1s; 
   }
   @keyframes spin 
   {
@@ -888,7 +887,7 @@ nav a
     }
     to 
     {
-        transform: rotate(720deg);
+        transform: rotate(2880deg);
     }
   }
   
