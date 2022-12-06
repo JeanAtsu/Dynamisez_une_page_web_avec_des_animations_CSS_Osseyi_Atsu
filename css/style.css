@@ -888,7 +888,7 @@ nav a
     }
     to 
     {
-        transform: rotate(720deg);
+        transform: rotate(0);
     }
   }
 
@@ -902,7 +902,7 @@ nav a
     overflow:hidden;
     z-index:1000;
     display:flex;
-    animation: load 1s ease-in-out 3s;
+    animation: load 3s ease-in-out 0s;
     height: 0;
     
 }
@@ -911,23 +911,30 @@ nav a
     0% 
     {
         top: 0;
-        height: 100%;
+        height: 100vh;
+        opacity: 1;
+    }
+    20% 
+    {
+        top: 20;
+        height: 80vh;
     }
     50% 
     {
         top: 30px;
-        height: 50vh;
+        height: 70vh;
     }
-    90% 
+    80% 
     {
-        top: 50px;
-        height: 10vh;
+        top: 80px;
+        height: 20vh;
     }
     100% 
     {
         top: 0;
         left: 0;
         height: 0;
+        opacity: 0;
     }
    
 }
