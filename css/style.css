@@ -255,6 +255,7 @@ input
     align-items: center;
     justify-items: center;
     justify-content: center;
+    width: 100%;
 }
 #fonctionnement > h3
 {
@@ -324,7 +325,7 @@ input
     justify-items: center;
     align-items: center;
     align-content: center;
-    margin-left: -6px;
+    margin-left: -15px;
 }
 .btnFonction
 {
@@ -887,16 +888,60 @@ nav a
     }
     to 
     {
-        transform: rotate(2880deg);
+        transform: rotate(720deg);
     }
   }
+
+  .loadingSpinner
+{
+    position:absolute;
+    background-color: #e3d3f7;
+    top:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:1000;
+    display:flex;
+    animation: load 1s ease-in-out 3s;
+    height: 0;
+    
+}
+@keyframes load 
+{
+    0% 
+    {
+        top: 0;
+        height: 100%;
+    }
+    50% 
+    {
+        top: 30px;
+        height: 50vh;
+    }
+    90% 
+    {
+        top: 50px;
+        height: 10vh;
+    }
+    100% 
+    {
+        top: 0;
+        left: 0;
+        height: 0;
+    }
+   
+}
   
 
 .ligneMenu div h5, .ligneMenu div h4
 {
-    display: flex;
+   /* display: flex; */
     width: 100%;
     margin-left: 5px;
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    overflow: hidden;  
+    align-content: center;
 }
 
 .ligneMenu > .prixMenu
@@ -951,9 +996,6 @@ nav a
     background-color: white;
     word-wrap: break-word;
     cursor: pointer;
-    text-overflow: ellipsis;  
-    white-space: initial;
-    overflow: hidden;  
 }
 
 .ligneMenu .check
@@ -972,17 +1014,9 @@ nav a
     padding-right: 0;
     width: 0px;
     transform:scale(0,0);
+   
 }
-
-.ligneMenu:hover .check
-{  
-    width: 50px;
-    cursor: pointer;
-    transition-duration: 1s;
-    transform: scale(1) rotate(1turn);
-}
-
-.ligneMenu .check i
+.ligneMenu .check .fa-circle-check
 {
     display: flex;
     align-self: center;
@@ -990,12 +1024,38 @@ nav a
     align-content: center;
     justify-content: center;
     justify-items: center;
-    color:  #99E2D0;  
-    background-color: #fff;
+    color: #fff;
     width: auto;
     border-radius: 100px 100px 100px 100px;
     font-size: 1.3em;
+    width: 0px;
+    transform: rotate(0);
 }
+
+.ligneMenu:hover .check 
+{  
+    width: 50px;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+.ligneMenu:hover .fa-circle-check
+{  
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: rotate(1turn);
+}
+
+.ligneMenu:hover .check 
+{  
+    width: 50px;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+
+
 .ligneMenu div
 {
     width: 100%;
@@ -1012,12 +1072,6 @@ nav a
     margin-left: 10px;
 }
 
-.ligneMenu div h5, .ligneMenu div h4
-{
-    align-content: center;
-    
-}
-
 .ligneMenu > h5
 {
     width: 100%;
@@ -1030,9 +1084,6 @@ nav a
     padding-top: 10px;
     padding-bottom: 3px;
     width: 100%;
-    text-overflow: ellipsis;  
-    white-space: initial;
-    overflow: hidden;  
 }
 .prixMenu
 {
