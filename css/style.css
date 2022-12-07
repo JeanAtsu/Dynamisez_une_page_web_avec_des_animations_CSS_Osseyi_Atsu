@@ -1008,7 +1008,7 @@ nav a
     margin-left: 10px;
 
 }
-.typeMenu
+.typeMenu, .typeMenuMarge
 {
     text-transform: uppercase;
     border-bottom: solid;
@@ -1021,6 +1021,11 @@ nav a
     margin-bottom: 2px;
     margin-left: 10px;
 }
+.typeMenuMarge
+{
+    margin-left: 30px;
+}
+
 
 .ligneMenu
 {
