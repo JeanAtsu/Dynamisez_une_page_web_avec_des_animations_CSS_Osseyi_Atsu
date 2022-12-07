@@ -256,6 +256,8 @@ input
     justify-items: center;
     justify-content: center;
     width: 100%;
+    margin-left: 5px;
+
 }
 #fonctionnement > h3
 {
@@ -313,10 +315,8 @@ input
 
 .pastilleViolette
 {
-    font-size: 1.2em;
     width: 30px;
     height: 30px;
-    padding-left: 1px;
     display: flex;
     background-color: #9356DC;
     border-radius: 100px 100px 100px 100px;
@@ -914,36 +914,71 @@ nav a
         height: 100vh;
         opacity: 1;
     }
+    10% 
+    {
+        top: 10px;
+        height: 90vh;
+    }
     20% 
     {
-        top: 20;
+        top: 20px;
         height: 80vh;
     }
-    50% 
+    30% 
     {
         top: 30px;
         height: 70vh;
+    }
+    40% 
+    {
+        top: 40px;
+        height: 60vh;
+    }
+    50% 
+    {
+        top: 50px;
+        height: 50vh;
+    }
+    60% 
+    {
+        top: 60px;
+        height: 40vh;
+    }
+    70% 
+    {
+        top: 70px;
+        height: 30vh;
     }
     80% 
     {
         top: 80px;
         height: 20vh;
     }
+    90% 
+    {
+        top: 90px;
+        height: 10vh;
+    }
     100% 
     {
         top: 0;
-        left: 0;
         height: 0;
         opacity: 0;
     }
    
 }
   
+.ligneMenu div
+{
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    overflow: hidden;  
+    align-content: center;
+    width: 100%;
+}
 
 .ligneMenu div h5, .ligneMenu div h4
 {
-   /* display: flex; */
-    width: 100%;
     margin-left: 5px;
     text-overflow: ellipsis;  
     white-space: nowrap;
@@ -954,11 +989,9 @@ nav a
 .ligneMenu > .prixMenu
 {
     display: flex;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: nowrap;
-    overflow: hidden;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fa-euro-sign
