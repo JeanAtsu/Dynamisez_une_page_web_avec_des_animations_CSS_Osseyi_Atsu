@@ -223,7 +223,7 @@ input
 }
 #titrePrincipal ul li a:hover
 {
-    background: #FF79DA ;
+    opacity: 0.8 ;
 }
 
 .explorer
@@ -1119,7 +1119,7 @@ nav a
 }
 #commander ul li a:hover
 {
-    background: #FF79DA ;
+    opacity: 0.8;
 }
 
 /*Média Queries */
