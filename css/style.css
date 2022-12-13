@@ -616,7 +616,7 @@ nav a
 .piedDePage
 {
     background-color: black;
-
+    padding-bottom: 20px;
 }
 .piedDePage div
 {
@@ -884,7 +884,7 @@ nav a
     }
     to 
     {
-        transform: rotate(0);
+        transform: rotate(720deg);
     }
   }
 
