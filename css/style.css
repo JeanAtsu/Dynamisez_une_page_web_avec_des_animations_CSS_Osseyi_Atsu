@@ -910,50 +910,12 @@ nav a
         height: 100vh;
         opacity: 1;
     }
-    10% 
-    {
-        top: 10px;
-        height: 90vh;
-    }
-    20% 
-    {
-        top: 20px;
-        height: 80vh;
-    }
-    30% 
-    {
-        top: 30px;
-        height: 70vh;
-    }
-    40% 
-    {
-        top: 40px;
-        height: 60vh;
-    }
-    50% 
-    {
-        top: 50px;
-        height: 50vh;
-    }
-    60% 
-    {
-        top: 60px;
-        height: 40vh;
-    }
-    70% 
-    {
-        top: 70px;
-        height: 30vh;
-    }
-    80% 
-    {
-        top: 80px;
-        height: 20vh;
-    }
+    
     90% 
     {
-        top: 90px;
-        height: 10vh;
+        top: 0;
+        height: 100vh;
+        opacity: 1;
     }
     100% 
     {
@@ -1037,6 +999,7 @@ nav a
     background-color: white;
     word-wrap: break-word;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .ligneMenu .check
@@ -1054,7 +1017,7 @@ nav a
     margin-right: 0;
     padding-right: 0;
     width: 0px;
-    transform:scale(0,0);
+    transition-duration: 1s;
    
 }
 .ligneMenu .check .fa-circle-check
@@ -1073,13 +1036,6 @@ nav a
     transform: rotate(0);
 }
 
-.ligneMenu:hover .check 
-{  
-    width: 50px;
-    cursor: pointer;
-    transition-duration: 1s;
-    transform: scale(1);
-}
 .ligneMenu:hover .fa-circle-check
 {  
     width: 100%;
@@ -1093,7 +1049,6 @@ nav a
     width: 50px;
     cursor: pointer;
     transition-duration: 1s;
-    transform: scale(1);
 }
 
 
@@ -1120,8 +1075,6 @@ nav a
 
 .ligneMenu div
 {
-   
-    padding-left: 3px;
     padding-top: 10px;
     padding-bottom: 3px;
     width: 100%;
