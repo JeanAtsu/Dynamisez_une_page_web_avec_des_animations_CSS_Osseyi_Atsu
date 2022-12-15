@@ -1061,6 +1061,8 @@ nav a
     align-items: center;
     align-content: center;
     word-wrap: break-word;
+    padding-top: 10px;
+    padding-bottom: 3px;
 }
 
 #entete a .fa-arrow-left
@@ -1073,12 +1075,6 @@ nav a
     width: 100%;
 }
 
-.ligneMenu div
-{
-    padding-top: 10px;
-    padding-bottom: 3px;
-    width: 100%;
-}
 .prixMenu
 {
     display: flex;
