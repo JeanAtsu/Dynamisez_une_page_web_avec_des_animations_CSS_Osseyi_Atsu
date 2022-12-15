@@ -299,7 +299,7 @@ input
     background: linear-gradient(0deg,#F2F2F2 30%, white 70%);
     height: 70px;
     width: 100%;
-    margin: 10px;
+    margin: 20px;
 }
 #fonctionnement ul li:hover
 { 
@@ -309,8 +309,8 @@ input
 
 .pastilleViolette
 {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     background-color: #9356DC;
     border-radius: 100px 100px 100px 100px;
@@ -319,7 +319,7 @@ input
     justify-items: center;
     align-items: center;
     align-content: center;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 .btnFonction
 {
@@ -933,15 +933,29 @@ nav a
     overflow: hidden;  
     align-content: center;
     width: 100%;
+    padding: 0;
 }
 
-.ligneMenu div h5, .ligneMenu div h4
+.ligneMenu div h5
+{
+    margin-left: 5px;
+    margin-top: 3px;
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    overflow: hidden;  
+    align-content: center;
+    margin-bottom: 3px;
+    
+}
+.ligneMenu div h4
 {
     margin-left: 5px;
     text-overflow: ellipsis;  
     white-space: nowrap;
     overflow: hidden;  
     align-content: center;
+    margin-top: 3px;
+  
 }
 
 .ligneMenu > .prixMenu
@@ -950,13 +964,15 @@ nav a
     width: 60px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 0;
+    vertical-align: bottom ;
 }
 
 .fa-euro-sign
 {
-    margin-left: 10px;
+    margin-left: 0;
     margin-right: 10px;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .fa-circle-check
@@ -1011,8 +1027,6 @@ nav a
     align-content: center;
     border-radius: 0px 15px 15px 0px;
     background-color: #99E2D0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     margin-left: 3px;
     margin-right: 0;
     padding-right: 0;
@@ -1049,7 +1063,6 @@ nav a
     cursor: pointer;
     transition-duration: 1s;
 }
-
 
 .ligneMenu div
 {
